@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kantin Sekolah</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🍽️ Kantin Sekolah</h1>
+        <p>Enak, Murah, dan Bersahabat!</p>
+    </header>
+
+    <nav>
+        <a href="#beranda">Beranda</a>
+        <a href="#menu">Menu</a>
+        <a href="#keranjang">Keranjang</a>
+    </nav>
+
+    <main class="container" id="beranda">
+        <h2 class="judul">Selamat Datang di Kantin Sekolah!</h2>
+        <p class="deskripsi">Pilih makanan dan minuman favoritmu di sini.</p>
+
+        <input type="text" id="search" class="search" placeholder="Cari makanan atau minuman...">
+
+        <h2 class="judul" id="menu">Daftar Menu</h2>
+
+        <div class="menu">
+
+            <div class="card" data-nama="nasi goreng">
+                <img src="nasi goreng sedap.jfif" alt="Foto Nasi Goreng" class="foto-menu">
+                <h3>Nasi Goreng</h3>
+                <p class="harga">Rp12.000</p>
+                <button onclick="tambah('Nasi Goreng',12000)">+ Tambah</button>
+            </div>
+
+            <div class="card" data-nama="mie goreng">
+                <img src="mie goreng.jxl" alt="Foto Mie Goreng" class="foto-menu">
+                <h3>Mie Goreng</h3>
+                <p class="harga">Rp8.000</p>
+                <button onclick="tambah('Mie Goreng',8000)">+ Tambah</button>
+            </div>
+
+            <div class="card" data-nama="bakso">
+                <img src="bakso merconn tapi boong hahha.jfif" alt="Foto Bakso" class="foto-menu">
+                <h3>Bakso</h3>
+                <p class="harga">Rp10.000</p>
+                <button onclick="tambah('Bakso',10000)">+ Tambah</button>
+            </div>
+
+            <div class="card" data-nama="roti">
+                <img src="HTML roti.jfif" alt="Foto Roti" class="foto-menu">
+                <h3>Roti</h3>
+                <p class="harga">Rp5.000</p>
+                <button onclick="tambah('Roti',5000)">+ Tambah</button>
+            </div>
+
+            <div class="card" data-nama="es teh">
+                <img src="es teh.jpg" alt="Foto Es Teh" class="foto-menu">
+                <h3>Es Teh</h3>
+                <p class="harga">Rp3.000</p>
+                <button onclick="tambah('Es Teh',3000)">+ Tambah</button>
+            </div>
+
+            <div class="card" data-nama="air mineral">
+                <img src="images (2).jfif" alt="Foto Air Mineral" class="foto-menu">
+                <h3>Air Mineral</h3>
+                <p class="harga">Rp4.000</p>
+                <button onclick="tambah('Air Mineral',4000)">+ Tambah</button>
+            </div>
+
+        </div>
+
+        <section class="keranjang" id="keranjang">
+            <h2>🛒 Keranjang Belanja</h2>
+
+            <div id="isiKeranjang">
+                <p>Belum ada pesanan.</p>
+            </div>
+
+            <p class="total">Total: <span id="total">Rp0</span></p>
+
+            <button class="pesan" onclick="pesanSekarang()">
+                Pesan Sekarang
+            </button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Kantin Sekolah | Terimakasih telah berbelanja</p>
+    </footer>
+
+    <script src="js.js"></script>
+</body>
+
+</html>
